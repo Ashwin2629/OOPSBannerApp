@@ -26,7 +26,7 @@ public class OOPSBannerApp {
         System.out.println("\n-----------------------------\n");
 
         // ========================
-        // ========================
+        
 // UC3: Same Banner using String.join()
         // ========================
          System.out.println("UC3 Output:");
