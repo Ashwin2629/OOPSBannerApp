@@ -7,7 +7,7 @@ public class OOPSBannerApp {
         // ========================
         System.out.println("OOPS");
 
-        System.out.println(); // blank line for spacing
+        System.out.println(); 
 
         // ========================
         // UC2: ASCII Banner Output
