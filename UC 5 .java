@@ -1,53 +1,24 @@
 public class OOPSBannerApp {
-
-    public static String[] getOPattern() {
-        return new String[] {
-            "  **** ",
-            " ** ** ",
-            " ** ** ",
-            " ** ** ",
-            " ** ** ",
-            " ** ** ",
-            "  **** "
-        };
-    }
-
-    public static String[] getPPattern() {
-        return new String[] {
-            " ***** ",
-            " ** ** ",
-            " ** ** ",
-            " ***** ",
-            " ** ",
-            " ** ",
-            " ** "
-        };
-    }
-
-    public static String[] getSPattern() {
-        return new String[] {
-            "  ***** ",
-            " ** ",
-            " ** ",
-            "  **** ",
-            "     ** ",
-            "     ** ",
-            " ***** "
-        };
-    }
-
     public static void main(String[] args) {
-        String[] oPattern = getOPattern();
-        String[] pPattern = getPPattern();
-        String[] sPattern = getSPattern();
+        String[] lines = {
+            String.join(" ",
+                "OOOOOOOOO", "OOOOOOOOO", "PPPPPPPPP", "SSSSSSSSS"),
+            String.join(" ",
+                "O       O", "O       O", "P       P", "S        "),
+            String.join(" ",
+                "O       O", "O       O", "P       P", "S        "),
+            String.join(" ",
+                "O       O", "O       O", "PPPPPPPPP", "SSSSSSSSS"),
+            String.join(" ",
+                "O       O", "O       O", "P         ", "        S"),
+            String.join(" ",
+                "O       O", "O       O", "P         ", "        S"),
+            String.join(" ",
+                "OOOOOOOOO", "OOOOOOOOO", "P         ", "SSSSSSSSS")
+        };
 
-        for (int i = 0; i < 7; i++) {
-            System.out.println(String.join(" ", 
-                oPattern[i], 
-                oPattern[i], 
-                pPattern[i], 
-                sPattern[i]
-            ));
+        for (String line : lines) {
+            System.out.println(line);
         }
     }
 }
